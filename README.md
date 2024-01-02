@@ -30,8 +30,10 @@ debugMode: Optional boolean flag to enable or disable debug mode (defaults to fa
 
 ```HTML
 <input type="text" id="myInput">
+<input type="text" id="myInput2">
 <script>
   const tp = new TextPredict('#myInput');
+  const tp2 = new TextPredict('#myInput2',false);
 </script>
 ```
 Use code with caution. Learn more
