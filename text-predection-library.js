@@ -16,7 +16,7 @@ class TextPredict {
     appendStyles() {
         const style = document.createElement('style');
         style.textContent = `
-        .tp-list {background: rgb(230, 230, 230);position: absolute;border-radius: 5px;filter: drop-shadow(0 2px 2px rgba(128, 128, 128, 0.534));font-family: inherit;}.tp-list span {display: flex;padding: 10px;}.tp-list span button {min-width: 60px;background: transparent;border: 0;border-right: 1px solid rgba(128, 128, 128, 0.534);font-family: inherit;}.tp-list span button:last-child {border: none;}.tp-list .edge {background: rgb(230, 230, 230);clip-path: polygon(51% 39%, 1% 0, 100% 0);position: absolute;bottom: calc(-100% + 9px);left: 50%;z-index: 1;width: 30px;height: 30px;transform: translate(-50%, 0%);}.tp-list.down .edge {left: 50%;top: 0%;margin-top: -10px;transform-origin: left;transform: translate(50%, -50%) rotate(180deg);}
+        .tp-list {background: rgb(230, 230, 230);position: absolute;border-radius: 5px;filter: drop-shadow(0 2px 2px rgba(128, 128, 128, 0.534));font-family: inherit;z-index:999999}.tp-list span {display: flex;padding: 10px;}.tp-list span button {min-width: 60px;background: transparent;border: 0;border-right: 1px solid rgba(128, 128, 128, 0.534);font-family: inherit;}.tp-list span button:last-child {border: none;}.tp-list .edge {background: rgb(230, 230, 230);clip-path: polygon(51% 39%, 1% 0, 100% 0);position: absolute;bottom: calc(-100% + 9px);left: 50%;z-index: 1;width: 30px;height: 30px;transform: translate(-50%, 0%);}.tp-list.down .edge {left: 50%;top: 0%;margin-top: -10px;transform-origin: left;transform: translate(50%, -50%) rotate(180deg);}
         `;
         document.head.appendChild(style);
     }
